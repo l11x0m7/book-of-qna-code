@@ -99,3 +99,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+*.DS_Store
+
+ch5/data/text8.zip

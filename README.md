@@ -1,19 +1,19 @@
 # book-of-qna-code
 code collections for the book of qna
 
-# Chapter 4
+## Chapter 4
 
 
-# Chapter 5
+## Chapter 5
 
-## word2vec
+### word2vec
 
 A simple implementation of word2vec
 
-## glove
+### glove
 
 A simple implementation of glove
 
-## fasttext
+### fasttext
 
 A simple implementation of fasttext

@@ -1,17 +1,22 @@
 # book-of-qna-code
+
 code collections for the book of qna
 
 ## Chapter 4
 
+该章节主要是介绍深度学习基础，并给出每个深度学习单元如何去构造一个QA网络。
+
 ### Dataset
 
-WikiQA, TrecQA, InsuranceQA. For experiments, we use WikiQA.
+实验中，我们使用WikiQA。
 
 #### data preprocess on WikiQA
 
 `run preprocess_wiki.ipynb`
 
 ### Siamese-NN model
+
+利用全连接层实现的一个pointwise的QA网络。
 
 #### train model
 
@@ -23,6 +28,8 @@ WikiQA, TrecQA, InsuranceQA. For experiments, we use WikiQA.
 
 ### Siamese-CNN model
 
+利用卷积层和池化层实现的一个pointwise的QA网络。
+
 #### train model
 
 `python siamese.py --train --model CNN`
@@ -33,6 +40,8 @@ WikiQA, TrecQA, InsuranceQA. For experiments, we use WikiQA.
 
 ### Siamese-RNN model
 
+利用LSTM或GRU实现的一个pointwise的QA网络。
+
 #### train model
 
 `python siamese.py --train --model RNN`
@@ -40,7 +49,6 @@ WikiQA, TrecQA, InsuranceQA. For experiments, we use WikiQA.
 #### test model
 
 `python siamese.py --test --model RNN`
-
 
 ### QACNN
 
@@ -58,6 +66,8 @@ WikiQA, TrecQA, InsuranceQA. For experiments, we use WikiQA.
 
 
 ## Chapter 5
+
+该章节主要为大家介绍深度学习在自然语言处理中必不可少的部分：embedding。此处我们为大家介绍了三种比较经典的词向量模型：word2vec，glove以及fasttext。通过实现这三个模型，并在小数据集上测试，帮助大家更好的理解这三个模型的原理。
 
 ### word2vec
 

@@ -55,7 +55,7 @@ class Test(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_score(self):
+    def test_prob(self):
         print("kenlm: 句子出现的概率")
         print("保 险:", math.pow(10, self.model.score('保 险', bos = True, eos = True)))
 

@@ -12,6 +12,6 @@ baseDir=$(cd `dirname "$0"`;pwd)
 cd $baseDir/..
 docker run -it --rm \
 	-v $PWD:/app \
-	chatopera/qna-book:1.0.0 \
+	chatopera/qna-book:1.0.1 \
 	bash
 

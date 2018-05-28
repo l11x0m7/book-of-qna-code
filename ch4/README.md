@@ -3,6 +3,15 @@
 
 该章节主要是介绍深度学习基础，并给出每个深度学习单元如何去构造一个QA网络。
 
+
+## Requirements
+
+pip install numpy
+pip install tensorflow
+pip install nltk
+pip install stanfordcorenlp
+pip install jieba
+
 ### Dataset
 
 实验中，我们使用WikiQA。

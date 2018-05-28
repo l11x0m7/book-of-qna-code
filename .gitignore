@@ -15,3 +15,5 @@ sftp-config.json
 ~$*.xls*
 ~$*.ppt*
 ~$*.doc*
+
+*.DS_Store

@@ -767,10 +767,10 @@ class FastText(SaveAndLoad):
 
 
 if __name__ == '__main__':
-    if not os.path.exists('./data'):
-        os.mkdir('./data')
+    if not os.path.exists('../data'):
+        os.mkdir('../data')
     # 训练语料
-    text8 = Text8Corpus('./data/text8.zip', sent_len=20, sent_num=200)
+    text8 = Text8Corpus('../data/text8.zip', sent_len=20, sent_num=200)
     # 训练模型
     logging.info("start training model")
 

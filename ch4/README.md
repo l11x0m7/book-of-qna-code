@@ -56,16 +56,3 @@ pip install jieba
 
 `python siamese.py --test --model RNN`
 
-### QACNN
-
-给定一个问题，一个正确答案和一个错误答案，这个模型能够给出两个答案的排序（谁的得分比谁高）。
-
-注意：该模型是会在第七章中介绍。
-
-#### train model
-
-`python qacnn.py --train`
-
-#### test model
-
-`python qacnn.py --test`

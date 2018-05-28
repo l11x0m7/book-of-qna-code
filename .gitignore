@@ -17,3 +17,5 @@ sftp-config.json
 ~$*.doc*
 
 *.DS_Store
+
+*.ipynb*

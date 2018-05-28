@@ -20,3 +20,5 @@ python lm.py Test.test_prob
 ```
 python lm.py Test.test_perplexity
 ```
+
+![](/assets/images/ngrams-lm.png)

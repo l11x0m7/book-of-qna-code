@@ -15,7 +15,7 @@ sftp-config.json
 ~$*.xls*
 ~$*.ppt*
 ~$*.doc*
-
+.vscode
 *.DS_Store
 
 *.ipynb*

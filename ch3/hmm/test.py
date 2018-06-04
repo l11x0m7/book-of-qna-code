@@ -52,7 +52,7 @@ def convert_map_to_matrix(map, label_index1, label_index2):
             m[label_index1[line]][label_index2[col]] = map[line][col]
     return m
 
-class HMMTestCase(unittest.TestCase):
+class Test(unittest.TestCase):
 
     def setUp(self):
         # 状态 

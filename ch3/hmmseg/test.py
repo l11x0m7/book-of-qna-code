@@ -35,17 +35,14 @@ class HMMSegTest(unittest.TestCase):
         self.T = Tokenizer()
 
     def test_punctuation(self):
-        print(' '.join(self.T.cut('作为市长，我也体会到这种危险。', punctuation = False)))
+        print('作为市长，我也体会到这种危险。 ==> ', '/'.join(self.T.cut('作为市长，我也体会到这种危险。', punctuation = False)))
 
     def test_basecase(self):
-        print(' '.join(self.T.cut('长春市长春节致词。', punctuation = True)))
-
-    def test_seg(self):
-        print(' '.join(self.T.cut('＊  ＊  ＊  ＊  ＊')))
+        print('长春市长春节致词。 ==>', '/'.join(self.T.cut('长春市长春节致词。', punctuation = True)))
 
     def test_oov(self):
-        print(' '.join(self.T.cut('温济泽')))
-        print(' '.join(self.T.cut('桑新')))
+        print('OOV:', ' '.join(self.T.cut('温济泽')))
+        print('OOV:', ' '.join(self.T.cut('桑新')))
 
 if __name__ == '__main__':
     unittest.main()

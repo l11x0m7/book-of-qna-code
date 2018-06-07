@@ -4,7 +4,7 @@
 
 核心类的接口和类之间的关系
 
-<img src="./classes.png" width="800">
+<img src="./classes.png" width="600">
 
 
 ## 测试分词器

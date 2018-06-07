@@ -2,6 +2,16 @@
 
 一阶隐马尔可夫模型，以及维特比算法、前后向算法和Baum-Welch算法的实现。
 
+## UML
+
+模块之间的关系
+
+<img src="./packages.png" width="200">
+
+核心类的接口和类之间的关系
+
+<img src="./classes.png" width="400">
+
 ## 前向算法
 
 * 预测：计算给定观测序列的发生概率

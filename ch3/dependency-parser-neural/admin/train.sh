@@ -21,6 +21,8 @@ embedding=/tools/words.vector.txt
 # main 
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
 cd $baseDir/..
+# 使用python2.7，目前不兼容python3.6
+source ~/venv-py2/bin/activate
 python app/parser.py \
     --dynet-seed $dynetSeed \
     --dynet-mem $dynetMem \

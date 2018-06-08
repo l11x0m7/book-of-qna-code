@@ -1,5 +1,7 @@
 # MMSEG分词算法
 
+如果使用本书附带的[docker镜像](https://hub.docker.com/r/chatopera/qna-book/)，所有依赖已经安装好，不需要再次安装。
+
 ## UML
 
 核心类的接口和类之间的关系

@@ -68,6 +68,10 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 
 [HMM中文分词器](ch3/hmmseg)
 
+[依存关系分析之transition-based经典算法](ch3/dependency-parser-nivre)
+
+[依存关系分析之transition-based神经网络算法](ch3/dependency-parser-neural)
+
 [Elasticsearch信息检索](ch3/search-engine)
 
 ## 第五章 词向量实现及应用

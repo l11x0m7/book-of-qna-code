@@ -1,8 +1,7 @@
 
-# Chapter 7
+# Chapter 6
 
 该章节主要介绍社区问答中的问答匹配问题，并介绍具有代表性的几个深度匹配模型。在该章中我们给出一个简单易用的pairwise的问答匹配网络QACNN。
-
 
 ## Requirements
 

@@ -6,11 +6,13 @@
 
 ## Requirements
 
+```
 pip install numpy
 pip install tensorflow
 pip install nltk
 pip install stanfordcorenlp
 pip install jieba
+```
 
 ### Dataset
 

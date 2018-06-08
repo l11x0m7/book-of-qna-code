@@ -22,7 +22,7 @@ class ArcHybridLSTM:
         self.rdims = options.rembedding_dims
         self.layers = options.lstm_layers
         self.wordsCount = words
-        self.vocab = {word: ind+3 for word, ind in w2i.items()}
+        self.vocab = {word: ind+3 for word, ind in w2i.iteritems()}
         self.pos = {word: ind+3 for ind, word in enumerate(pos)}
         self.rels = {word: ind for ind, word in enumerate(rels)}
         self.irels = rels
@@ -50,7 +50,7 @@ class ArcHybridLSTM:
             self.extrnd['*PAD*'] = 1
             self.extrnd['*INITIAL*'] = 2
 
-            print('Load external embedding. Vector dimensions', self.edim)
+            print 'Load external embedding. Vector dimensions', self.edim
 
         dims = self.wdims + self.pdims + (self.edim if self.external_embedding is not None else 0)
         self.blstmFlag = options.blstmFlag
@@ -296,7 +296,7 @@ class ArcHybridLSTM:
 
             for iSentence, sentence in enumerate(shuffledData):
                 if iSentence % 100 == 0 and iSentence != 0:
-                    print( 'Processing sentence number:', iSentence, 'Loss:', eloss / etotal, 'Errors:', (float(eerrors)) / etotal, 'Labeled Errors:', (float(lerrors) / etotal) , 'Time', time.time()-start)
+                    print 'Processing sentence number:', iSentence, 'Loss:', eloss / etotal, 'Errors:', (float(eerrors)) / etotal, 'Labeled Errors:', (float(lerrors) / etotal) , 'Time', time.time()-start
                     start = time.time()
                     eerrors = 0
                     eloss = 0.0
@@ -406,4 +406,4 @@ class ArcHybridLSTM:
             renew_cg()
 
         self.trainer.update_epoch()
-        print("Loss: ", mloss/iSentence)
+        print "Loss: ", mloss/iSentence

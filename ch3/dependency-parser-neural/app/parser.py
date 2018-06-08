@@ -1,12 +1,6 @@
-
-try:
-    import cPickle as pickle
-except ImportError:
-    import pickle
-
 from optparse import OptionParser
 from arc_hybrid import ArcHybridLSTM
-import utils, os, time, sys
+import pickle, utils, os, time, sys
 
 if __name__ == '__main__':
     parser = OptionParser()
@@ -39,25 +33,25 @@ if __name__ == '__main__':
     parser.add_option("--dynet-mem", type="int", dest="cnn_mem", default=512)
 
     (options, args) = parser.parse_args()
-    print('Using external embedding:', options.external_embedding)
+    print 'Using external embedding:', options.external_embedding
 
     if not options.predictFlag:
         if not (options.rlFlag or options.rlMostFlag or options.headFlag):
-            print('You must use either --userlmost or --userl or --usehead (you can use multiple)')
+            print 'You must use either --userlmost or --userl or --usehead (you can use multiple)'
             sys.exit()
 
-        print('Preparing vocab')
+        print 'Preparing vocab'
         words, w2i, pos, rels = utils.vocab(options.conll_train)
 
-        with open(os.path.join(options.output, options.params), 'wb') as paramsfp:
-            pickle.dump((words, w2i, list(pos), list(rels), options), paramsfp)
-        print('Finished collecting vocab')
+        with open(os.path.join(options.output, options.params), 'w') as paramsfp:
+            pickle.dump((words, w2i, pos, rels, options), paramsfp)
+        print 'Finished collecting vocab'
 
-        print('Initializing blstm arc hybrid:')
+        print 'Initializing blstm arc hybrid:'
         parser = ArcHybridLSTM(words, pos, rels, w2i, options)
 
         for epoch in xrange(options.epochs):
-            print('Starting epoch', epoch)
+            print 'Starting epoch', epoch
             parser.Train(options.conll_train)
             conllu = (os.path.splitext(options.conll_dev.lower())[1] == '.conllu')
             devpath = os.path.join(options.output, 'dev_epoch_' + str(epoch+1) + ('.conll' if not conllu else '.conllu'))
@@ -68,10 +62,10 @@ if __name__ == '__main__':
             else:
                 os.system('python app/utils/evaluation_script/conll17_ud_eval.py -v -w app/utils/evaluation_script/weights.clas ' + options.conll_dev + ' ' + devpath + ' > ' + devpath + '.txt')
             
-            print('Finished predicting dev')
+            print 'Finished predicting dev'
             parser.Save(os.path.join(options.output, options.model + str(epoch+1)))
     else:
-        with open(options.params, 'rb') as paramsfp:
+        with open(options.params, 'r') as paramsfp:
             words, w2i, pos, rels, stored_opt = pickle.load(paramsfp)
 
         stored_opt.external_embedding = options.external_embedding
@@ -90,5 +84,5 @@ if __name__ == '__main__':
         else:
             os.system('python app/utils/evaluation_script/conll17_ud_eval.py -v -w app/utils/evaluation_script/weights.clas ' + options.conll_test + ' ' + tespath + ' > ' + testpath + '.txt')
         
-        print('Finished predicting test',te-ts)
+        print 'Finished predicting test',te-ts
 

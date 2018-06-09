@@ -60,9 +60,9 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 
 [隐马尔可夫模型](ch2/hmm)
 
-## 第三章 自然语言处理接触
+## 第三章 自然语言处理基础
 
-[有向无环图(DAG](ch3/DAG)
+[有向无环图(DAG)](ch3/DAG)
 
 [MMSEG中文分词器](ch3/mmseg)
 
@@ -74,6 +74,14 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 
 [Elasticsearch信息检索](ch3/search-engine)
 
+## 第四章 深度学习初步
+
+[Siamese神经网络完成问答任务]()
+
+[Siamese卷积神经网络完成问答任务]()
+
+[Siamese循环神经网络完成问答任务]()
+
 ## 第五章 词向量实现及应用
 
 [N元模型(ngrams)](ch5/ngrams)
@@ -83,6 +91,10 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 [glove](ch5/glove)
 
 [fasttext](ch5/fasttext)
+
+## 第六章 社区问答中的QA匹配
+
+[Pairwise形式的模型:QACNN]()
 
 ## License
 [Apache 2.0](./LICENSE)

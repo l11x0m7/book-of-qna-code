@@ -1,0 +1,17 @@
+http.host: 0.0.0.0
+# Consider to enable cors features for elasticsearch head
+# https://github.com/mobz/elasticsearch-head#enable-cors-in-elasticsearch
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+security.manager.enabled: false
+
+# Enable inline scripting
+script.engine.groovy.inline.aggs: true
+script.engine.groovy.inline.mapping: true
+script.engine.groovy.inline.search: true
+script.engine.groovy.inline.update: true
+script.engine.groovy.inline.plugin: true
+
+# Uncomment the following lines for a production cluster deployment
+# #transport.host: 0.0.0.0
+# #discovery.zen.minimum_master_nodes: 1

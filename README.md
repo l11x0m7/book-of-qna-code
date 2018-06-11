@@ -72,6 +72,8 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 
 [依存关系分析之transition-based神经网络算法](ch3/dependency-parser-neural)
 
+[Apache Lucene示例程序](ch3/lucene-sample)
+
 [Elasticsearch信息检索](ch3/search-engine)
 
 ## 第四章 深度学习初步

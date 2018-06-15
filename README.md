@@ -80,6 +80,8 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 
 ## 第四章 深度学习初步
 
+[lightnn](ch4/lightnn/)
+
 [Siamese神经网络完成问答任务](ch4/siamese_nn/)
 
 [Siamese卷积神经网络完成问答任务](ch4/siamese_cnn/)

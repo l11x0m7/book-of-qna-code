@@ -12,6 +12,14 @@ pip install nltk
 pip install jieba
 ```
 
+## 神经网络
+
+构建自己的神经网络包lightnn。
+
+[To this repo](lightnn/)
+
+## 问答网络
+
 ### Dataset
 
 实验中，我们使用WikiQA。

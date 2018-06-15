@@ -80,11 +80,11 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 
 ## 第四章 深度学习初步
 
-[Siamese神经网络完成问答任务]()
+[Siamese神经网络完成问答任务](ch4/siamese_nn/)
 
-[Siamese卷积神经网络完成问答任务]()
+[Siamese卷积神经网络完成问答任务](ch4/siamese_cnn/)
 
-[Siamese循环神经网络完成问答任务]()
+[Siamese循环神经网络完成问答任务](ch4/siamese_rnn/)
 
 ## 第五章 词向量实现及应用
 
@@ -98,7 +98,13 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 
 ## 第六章 社区问答中的QA匹配
 
-[Pairwise形式的模型:QACNN]()
+[Pairwise形式的QACNN模型](ch6/qacnn/)
+
+[Decomposable Attention模型](ch6/decomposable_att_model/)
+
+[多比较方式的比较-集成模型](ch6/seq_match_seq/)
+
+[BiMPM模型](ch6/bimpm/)
 
 ## License
 [Apache 2.0](./LICENSE)

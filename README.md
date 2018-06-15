@@ -60,6 +60,8 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 
 [隐马尔可夫模型](ch2/hmm)
 
+[CRF模型](ch2/crf)
+
 ## 第三章 自然语言处理基础
 
 [有向无环图(DAG)](ch3/DAG)

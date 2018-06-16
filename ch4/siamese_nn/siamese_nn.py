@@ -1,12 +1,45 @@
-# -*- encoding:utf8 -*-
-import tensorflow as tf
-import numpy as np
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#===============================================================================
+#
+# Copyright (c) 2017 <> All Rights Reserved
+#
+#
+# Author: Lin Xu Ming, Hai Liang Wang
+# Date: 2018-06-04:18:56:20
+#
+#===============================================================================
+
+"""
+   
+"""
+from __future__ import print_function
+from __future__ import division
+
+__copyright__ = "Copyright (c) 2017 . All Rights Reserved"
+__author__    = "Xu Ming Lin<>, Hai Liang Wang<hailiang.hl.wang@gmail.com>,"
+__date__      = "2018-06-04:18:56:20"
+
+
 import os
 import sys
+curdir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(curdir)
+
+if sys.version_info[0] < 3:
+    stdout = sys.stdout
+    reload(sys)
+    sys.stdout = stdout
+else:
+    unicode = str
+
+# Get ENV
+ENVIRON = os.environ.copy()
+
+import tensorflow as tf
+import numpy as np
 from copy import deepcopy
-stdout = sys.stdout
-reload(sys)
-sys.stdout = stdout
+
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
@@ -163,8 +196,16 @@ if __name__ == '__main__':
     model_path = 'models'
     raw_data_path = '../data/WikiQA/raw'
     processed_data_path = '../data/WikiQA/processed'
+    processed_data_pkl = os.path.join(processed_data_path, 'vocab.pkl')
     embedding_path = '../data/embedding/glove.6B.300d.txt'
+    if 'GLOVE_EMBEDDING_6B' in ENVIRON:
+        embedding_path = ENVIRON['GLOVE_EMBEDDING_6B']
 
-    with open(os.path.join(processed_data_path, 'vocab.pkl'), 'r') as fr:
+    print("embedding file: %s" % embedding_path)
+
+    if not os.path.exists(processed_data_pkl): 
+        raise BaseException("data [%] not exist, run ch4/preprocess_wiki.py first." % processed_data_pkl)
+
+    with open(processed_data_pkl, 'r') as fr:
         word2id, id2word = pkl.load(fr)
     main(args)

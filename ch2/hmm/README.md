@@ -2,7 +2,7 @@
 
 一阶隐马尔可夫模型，以及维特比算法、前后向算法和Baum-Welch算法的实现。
 
-如果使用本书附带的[docker镜像](https://hub.docker.com/r/chatopera/qna-book/)，所有依赖已经安装好，不需要再次安装。
+如果使用本书附带的[docker镜像](https://hub.docker.com/r/chatopera/qna-book/)，所有依赖已经安装好，不需要再次安装。使用docker镜像运行程序的方式详见[文档](https://github.com/l11x0m7/book-of-qna-code/blob/master/README.md)。
 
 ## UML
 

@@ -1,14 +1,47 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#===============================================================================
+#
+# Copyright (c) 2017 <> All Rights Reserved
+#
+#
+# File: /Users/hain/tmp/t.py
+# Author: Hai Liang Wang
+# Date: 2018-06-04:18:56:20
+#
+#===============================================================================
 
-# coding: utf-8
+"""
+   
+"""
+from __future__ import print_function
+from __future__ import division
 
-# In[1]:
+__copyright__ = "Copyright (c) 2017 . All Rights Reserved"
+__author__    = "Xu Ming Lin<>, Hai Liang Wang<hailiang.hl.wang@gmail.com>,"
+__date__      = "2018-06-04:18:56:20"
 
 
 import os
 import sys
-stdout = sys.stdout
-reload(sys)
-sys.stdout = stdout
+curdir = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(curdir)
+
+if sys.version_info[0] < 3:
+    stdout = sys.stdout
+    sys.setdefaultencoding("utf-8")
+    reload(sys)
+    sys.stdout = stdout
+else:
+    unicode = str
+
+# Get ENV
+ENVIRON = os.environ.copy()
+
+# In[1]:
+
+import os
+import sys
 
 import cPickle as pkl
 

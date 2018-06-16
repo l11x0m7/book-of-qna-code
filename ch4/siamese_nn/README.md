@@ -10,7 +10,7 @@
 ### 依赖
 
 * python2.7
-* tensorflow
+* tensorflow==1.8.0
 
 
 #### 下载词向量文件[glove](../download.sh)。
@@ -41,4 +41,17 @@
 
 ```
 ./test.sh
+```
+
+某模型测试结果
+```
+(venv-py2) root@c0af3b5946b4:/app/ch4/siamese_nn# ./test.sh
+test model
+embedding file: /tools/embedding/glove.6B.100d.txt
+Pre-trained: 27058 (92.94%)
+2018-06-16 08:48:31.042864: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /app/ch4/siamese_nn/models.py:76: calling l2_normalize (from tensorflow.python.ops.nn_impl) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+dim is deprecated, use axis instead
+[test] MAP:0.57962640327, MRR:0.595034754835
 ```

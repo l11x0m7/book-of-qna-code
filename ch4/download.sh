@@ -5,8 +5,8 @@ PWD=$(pwd)
 # Download GloVe
 GLOVE_DIR=$PWD/data/embedding
 mkdir -p $GLOVE_DIR
-wget http://nlp.stanford.edu/data/glove.6B.300d.zip -O $GLOVE_DIR/glove.6B.300d.zip
-unzip $GLOVE_DIR/glove.6B.300d.zip -d $GLOVE_DIR
+wget http://nlp.stanford.edu/data/glove.6B.zip -O $GLOVE_DIR/glove.6B.zip
+unzip $GLOVE_DIR/glove.6B.zip -d $GLOVE_DIR
 
 # Download Glove Character Embedding
 # wget https://raw.githubusercontent.com/minimaxir/char-embeddings/master/glove.840B.300d-char.txt -O $GLOVE_DIR/glove.840B.300d-char.txt

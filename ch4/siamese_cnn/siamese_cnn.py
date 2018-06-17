@@ -53,7 +53,8 @@ class CNNConfig(object):
 
 def train(train_corpus, config, val_corpus, eval_train_corpus=None):
     iterator = Iterator(train_corpus)
-
+    if not os.path.exists(model_path):
+        os.mkdir(model_path)
     with tf.Session(config=config.cf) as sess:
         model = SiameseCNN(config)
         saver = tf.train.Saver()

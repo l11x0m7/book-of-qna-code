@@ -1,4 +1,6 @@
-# 使用RNN网络实现问答任务
+# Siamese循环神经网络完成问答任务
+
+利用LSTM或GRU实现的一个pointwise的QA网络。
 
 ## 准备
 

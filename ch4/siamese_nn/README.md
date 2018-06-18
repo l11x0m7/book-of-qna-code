@@ -1,7 +1,8 @@
-# 人工神经网络实现问答任务
+# Siamese神经网络完成问答任务
 
 基于[Tensorflow](https://www.tensorflow.org/)和[WikiQA数据集](https://aclweb.org/anthology/D15-1237)。
 
+利用全连接层实现的一个pointwise的QA网络。
 
 ## 安装
 
@@ -27,7 +28,7 @@
 
 正常运行后，有下面输出：
 
-<img src="./assets/1.png" width="800">
+<img src="../assets/1.png" width="800">
 
 ## 运行
 

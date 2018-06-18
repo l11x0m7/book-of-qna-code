@@ -43,3 +43,12 @@
 ./test.sh
 ```
 
+某模型测试结果
+```
+root@feedd41cb9b4:/app/ch4/siamese_rnn# ./test.sh
+test model
+embedding file: /tools/embedding/glove.6B.100d.txt
+Pre-trained: 27058 (92.94%)
+[test] MAP:0.57135303545, MRR:0.587008845723
+```
+

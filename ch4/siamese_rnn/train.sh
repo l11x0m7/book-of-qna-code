@@ -14,4 +14,4 @@ export GLOVE_EMBEDDING_6B=/tools/embedding/glove.6B.100d.txt
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
 cd $baseDir
 echo "train model"
-python siamese_cnn.py --train
+python siamese_rnn.py --train

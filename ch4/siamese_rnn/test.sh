@@ -14,4 +14,4 @@ export GLOVE_EMBEDDING_6B=/tools/embedding/glove.6B.100d.txt
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
 cd $baseDir
 echo "test model"
-python siamese_nn.py --test
+python siamese_rnn.py --test

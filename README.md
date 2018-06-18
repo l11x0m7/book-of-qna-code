@@ -90,13 +90,15 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 
 ## 第五章 词向量实现及应用
 
+该章节主要为大家介绍深度学习在自然语言处理中必不可少的部分：embedding。此处我们为大家介绍了三种比较经典的词向量模型：word2vec，glove以及fasttext。通过实现这三个模型，并在小数据集上测试，帮助大家更好的理解这三个模型的原理。
+
 [N元模型(ngrams)](ch5/ngrams)
 
-[word2vec](ch5/word2vec)
+[word2vec的简单实现](ch5/word2vec)
 
-[glove](ch5/glove)
+[glove的简单实现](ch5/glove)
 
-[fasttext](ch5/fasttext)
+[fasttext的简单实现](ch5/fasttext)
 
 ## 第六章 社区问答中的QA匹配
 

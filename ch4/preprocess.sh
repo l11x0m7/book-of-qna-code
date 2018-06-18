@@ -12,3 +12,6 @@ source ~/venv-py2/bin/activate # Use python2
 [ -z "${BASH_SOURCE[0]}" -o "${BASH_SOURCE[0]}" = "$0" ] || return
 cd $baseDir
 python preprocess_wiki.py
+
+echo "deactivate python2.7 environment ..."
+deactivate

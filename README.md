@@ -80,7 +80,7 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 
 ## 第四章 深度学习初步
 
-[lightnn：轻量级卷积神经网络工具包](ch4/lightnn/)
+[lightnn：教学用神经网络工具包](ch4/lightnn/)
 
 [Siamese神经网络完成问答任务](ch4/siamese_nn/)
 

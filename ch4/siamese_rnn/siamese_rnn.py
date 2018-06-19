@@ -36,17 +36,16 @@ class RNNConfig(object):
         # RNN单元类型和大小与堆叠层数
         self.cell_type = 'GRU'
         self.rnn_size = 128
-        self.layer_size = 2
+        self.layer_size = 1
         # 隐层大小
-        self.hidden_size = 256
-        self.output_size = 128
-        # 每种filter的数量
-        self.num_filters = 128
-        self.keep_prob = 0.6
+        self.hidden_size = 128
+        self.output_size = 64
+
+        self.keep_prob = 0.8
         # 学习率
-        self.lr = 0.001
+        self.lr = 0.00006
         # contrasive loss 中的 positive loss部分的权重
-        self.pos_weight = 0.5
+        self.pos_weight = 5
 
         self.cf = tf.ConfigProto(allow_soft_placement=True, log_device_placement=False)
         self.cf.gpu_options.per_process_gpu_memory_fraction = 0.2

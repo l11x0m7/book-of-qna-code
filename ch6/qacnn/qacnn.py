@@ -8,6 +8,8 @@ reload(sys)
 sys.stdout = stdout
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+# Get ENV
+ENVIRON = os.environ.copy()
 
 import cPickle as pkl
 from utils import *
@@ -174,8 +176,17 @@ if __name__ == '__main__':
 
     raw_data_path = '../data/WikiQA/raw'
     processed_data_path = '../data/WikiQA/processed'
+    processed_data_pkl = os.path.join(processed_data_path, 'vocab.pkl')
     embedding_path = '../data/embedding/glove.6B.300d.txt'
     model_path = 'models'
+
+    if 'GLOVE_EMBEDDING_6B' in ENVIRON:
+        embedding_path = ENVIRON['GLOVE_EMBEDDING_6B']
+
+    print("embedding file: %s" % embedding_path)
+
+    if not os.path.exists(processed_data_pkl): 
+        raise BaseException("data [%] not exist, run ch6/preprocess_wiki.py first." % processed_data_pkl)
 
     with open(os.path.join(processed_data_path, 'vocab.pkl'), 'r') as fr:
         word2id, id2word = pkl.load(fr)

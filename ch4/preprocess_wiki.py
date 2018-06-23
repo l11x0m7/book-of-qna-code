@@ -5,7 +5,6 @@
 # Copyright (c) 2017 <> All Rights Reserved
 #
 #
-# File: /Users/hain/tmp/t.py
 # Author: Hai Liang Wang
 # Date: 2018-06-04:18:56:20
 #
@@ -29,7 +28,6 @@ sys.path.append(curdir)
 
 if sys.version_info[0] < 3:
     stdout = sys.stdout
-    sys.setdefaultencoding("utf-8")
     reload(sys)
     sys.stdout = stdout
 else:

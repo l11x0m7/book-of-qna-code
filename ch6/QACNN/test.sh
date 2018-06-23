@@ -15,7 +15,7 @@ echo "active python2.7 environment"
 source ~/venv-py2/bin/activate # Use python2
 cd $baseDir
 echo "train model"
-python qacnn.py --train
+python qacnn.py --test
 
 echo "deactivate python2.7 environment ..."
 deactivate

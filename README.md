@@ -102,13 +102,15 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 
 ## 第六章 社区问答中的QA匹配
 
-[Pairwise形式的QACNN模型](ch6/qacnn/)
+该章节主要介绍社区问答中的问答匹配问题，并介绍具有代表性的几个深度匹配模型。在该章中我们给出一个简单易用的pairwise的问答匹配网络QACNN。
 
-[Decomposable Attention模型](ch6/decomposable_att_model/)
+[Pairwise形式的QACNN模型](ch6/QACNN/)
 
-[多比较方式的比较-集成模型](ch6/seq_match_seq/)
+[Decomposable Attention模型](ch6/decomposable_att_model/)：复现《A Decomposable Attention Model for Natural Language Inference》
 
-[BiMPM模型](ch6/bimpm/)
+[多比较方式的比较-集成模型](ch6/seq_match_seq/)：复现《A COMPARE-AGGREGATE MODEL FOR MATCHING TEXT SEQUENCES》
+
+[BiMPM模型](ch6/bimpm/)：复现《Bilateral Multi-Perspective Matching for Natural Language Sentence》
 
 ## License
 [Apache 2.0](./LICENSE)

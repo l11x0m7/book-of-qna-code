@@ -1,6 +1,6 @@
 <p align="center">
   <b>快速购书<a href="https://item.jd.com/12479014.html" target="_blank">链接</a></b><br>
-  <img src="https://user-images.githubusercontent.com/3538629/48657619-bcd24880-ea6e-11e8-8c4e-8bcb00761942.png" width="800">
+  <img src="https://user-images.githubusercontent.com/3538629/48657619-bcd24880-ea6e-11e8-8c4e-8bcb00761942.png" width="400">
 </p>
 
 

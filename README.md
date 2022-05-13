@@ -3,7 +3,7 @@
 <p align="center">
   <b>快速购书<a href="https://item.jd.com/12479014.html" target="_blank">链接</a></b><br>
   <a href="https://item.jd.com/12479014.html" target="_blank">
-  <img src="https://user-images.githubusercontent.com/3538629/48657619-bcd24880-ea6e-11e8-8c4e-8bcb00761942.png" width="400">      
+  <img src="https://user-images.githubusercontent.com/3538629/48657619-bcd24880-ea6e-11e8-8c4e-8bcb00761942.png" width="400">
   </a>
 </p>
 
@@ -14,7 +14,7 @@
 <p align="center">
   <b>从0开始深度学习<a href="https://edu.csdn.net/bundled/detail/59?utm_source=tg16" target="_blank">链接</a></b><br>
   <a href="https://edu.csdn.net/bundled/detail/59?utm_source=tg16" target="_blank">
-  <img src="https://user-images.githubusercontent.com/3538629/63840877-58a4c380-c9b4-11e9-9a50-5601e911b5de.png" width="600">      
+  <img src="https://user-images.githubusercontent.com/3538629/63840877-58a4c380-c9b4-11e9-9a50-5601e911b5de.png" width="600">
   </a>
 </p>
 
@@ -36,7 +36,7 @@
 
 **《智能问答与深度学习》** 这本书是服务于准备入门机器学习和自然语言处理的学生和软件工程师的，在理论上介绍了很多原理、算法，同时也提供很多示例程序增加实践性，这些程序被汇总到示例程序代码库，这些程序主要是帮助大家理解原理和算法的，欢迎大家下载和执行。代码库的地址是：
 
-https://github.com/l11x0m7/book-of-qna-code
+<https://github.com/l11x0m7/book-of-qna-code>
 
 在阅读本书的过程中，各章有示例程序的段落会说明对应代码库的路径。同时，在代码库中，也有文档介绍如何执行程序。
 
@@ -48,13 +48,13 @@ https://github.com/l11x0m7/book-of-qna-code
 
 Git 是一个分布式版本管理工具，目前很多开源码项目使用它发布和协作，下载地址：
 
-https://git-scm.com/
+<https://git-scm.com/>
 
 - Docker
 
 Docker 是容器技术，容器是一种构建、发布和执行软件服务的标准，容器能屏蔽操作系统的不一致性，简便了软件发布、开发和运维，下载地址：
 
-https://www.docker.com/
+<https://www.docker.com/>
 
 这两个工具能兼容多种操作系统，我们强烈建议在阅读本书的第三章前，安装二者。
 
@@ -81,11 +81,45 @@ cd book-of-qna-code
 
 至此，读者就具有可执行示例程序的环境了，详细使用说明参考各项目文件夹内的文档。
 
+## 引用本书
+
+BibTex Source 格式书写：
+
+- English
+
+```
+@Book{qnadlbook2019,
+  author    = {Hailiang Wang, Zhuohuan Li, Xuming Lin, Kexin Chen, Sizhen Lee},
+  editor    = {Liujie Zheng},
+  publisher = {Beijing:Publishing House of Electronics Industry},
+  title     = {Intelligent Question-Answer System and Deep Learning},
+  year      = {2019},
+  edition   = {1},
+  isbn      = {9787121349218},
+  url       = {https://github.com/l11x0m7/book-of-qna-code},
+}
+```
+
+- 中文
+
+```
+@Book{qnadlbook2019,
+  author    = {王海良, 李卓桓, 林旭鸣, 陈可心, 李思珍},
+  editor    = {郑柳洁},
+  publisher = {电子工业出版社},
+  title     = {智能问答与深度学习},
+  year      = {2019},
+  edition   = {1},
+  isbn      = {9787121349218},
+  url       = {https://github.com/l11x0m7/book-of-qna-code},
+}
+```
+
 ## 联系我们
 
 在您遇到关于软件安装、容器运行、程序代码执行等问题时，可通过下面地址反馈给我们：
 
-https://github.com/l11x0m7/book-of-qna-code/issues
+<https://github.com/l11x0m7/book-of-qna-code/issues>
 
 ## 第二章 机器学习基础
 
@@ -154,7 +188,6 @@ https://github.com/l11x0m7/book-of-qna-code/issues
 [co-banner-image]: https://user-images.githubusercontent.com/3538629/42217321-3d5e44f6-7ef7-11e8-94e7-1574bfa1dbb8.png
 [co-url]: https://www.chatopera.com
 
-
 ## Chatopera 云服务
 
 [https://bot.chatopera.com/](https://bot.chatopera.com/)
@@ -214,7 +247,6 @@ Chatopera 机器人平台包括知识库、多轮对话、意图识别和语音�
 
 </p>
 </details>
-
 
 <p align="center">
   <b>立即使用</b><br>
